@@ -14,6 +14,8 @@ endif
 #    ldflags-y += -s
 #endif
 
+TARGET_BUILD_VARIANT := user
+
 # Force build fail on modpost warning
 KBUILD_MODPOST_FAIL_ON_WARNINGS := y
 ###############################################################################
