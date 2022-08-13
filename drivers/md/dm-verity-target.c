@@ -581,14 +581,6 @@ static int verity_verify_io(struct dm_verity_io *io)
 
 /*
  * Skip verity work in response to I/O error when system is shutting down.
- *  */
-static inline bool verity_is_system_shutting_down(void)
-{
-        return system_state == SYSTEM_HALT || system_state == SYSTEM_POWER_OFF
-                    || system_state == SYSTEM_RESTART;
-}
-/*
- * Skip verity work in response to I/O error when system is shutting down.
  */
 static inline bool verity_is_system_shutting_down(void)
 {
