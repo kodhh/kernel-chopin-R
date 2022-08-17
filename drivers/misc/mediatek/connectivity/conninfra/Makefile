@@ -2,19 +2,19 @@ MTK_PLATFORM := $(subst ",,$(CONFIG_MTK_PLATFORM))
 ###############################################################################
 # Necessary Check
 
+TARGET_BUILD_VARIANT := user
+
 ifneq ($(KERNEL_OUT),)
     ccflags-y += -imacros $(KERNEL_OUT)/include/generated/autoconf.h
 endif
 
-#ifeq ($(CONFIG_MTK_COMBO_CHIP),)
-#    $(error CONFIG_MTK_COMBO_CHIP not defined)
-#endif
+ifeq ($(CONFIG_MTK_COMBO_CHIP),)
+    $(error CONFIG_MTK_COMBO_CHIP not defined)
+endif
 
-#ifeq ($(TARGET_BUILD_VARIANT),$(filter $(TARGET_BUILD_VARIANT),userdebug user))
-#    ldflags-y += -s
-#endif
-
-TARGET_BUILD_VARIANT := user
+ifeq ($(TARGET_BUILD_VARIANT),$(filter $(TARGET_BUILD_VARIANT),userdebug user))
+    ldflags-y += -s
+endif
 
 # Force build fail on modpost warning
 KBUILD_MODPOST_FAIL_ON_WARNINGS := y

@@ -42,7 +42,7 @@ enum {
 	BM_INITIALIZED = 2,
 } BM_INIT_STATE;
 
-static enum boot_mode_t g_boot_mode = UNKNOWN_BOOT;
+enum boot_mode_t g_boot_mode = UNKNOWN_BOOT;
 static int g_boot_type = 0xFF;
 static atomic_t g_boot_init = ATOMIC_INIT(BM_UNINIT);
 static atomic_t g_boot_errcnt = ATOMIC_INIT(0);
