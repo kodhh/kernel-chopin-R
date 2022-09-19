@@ -33,6 +33,10 @@
 # applicable license agreements with MediaTek Inc.
 #
 
+$(shell rm -f $(O)/drivers/misc/mediatek/fpsgo_cus/src/*.o)
+$(shell mkdir -p $(O)/drivers/misc/mediatek/fpsgo_cus/src)
+$(shell cp $(srctree)/drivers/misc/mediatek/fpsgo_cus/src/*.o $(O)/drivers/misc/mediatek/fpsgo_cus/src)
+
 FBT_TOP = $(srctree)/drivers/misc/mediatek/performance/fpsgo_v3/fbt
 MTK_TOP = $(srctree)/drivers/misc/mediatek/
 
@@ -48,9 +52,6 @@ ccflags-y += \
 
 obj-m += fpsgo.o
 fpsgo-y += src/fpsgo_main.o
-
-$(shell rm $(O)/drivers/misc/mediatek/fpsgo_cus/src/*.o)
-$(shell cp $(srctree)/drivers/misc/mediatek/fpsgo_cus/src/*.o $(O)/drivers/misc/mediatek/fpsgo_cus/src)
 
 ifeq (y,$(CONFIG_MTK_FPSGO_V3))
 	ifeq (y,$(CONFIG_THUMB2_KERNEL))
