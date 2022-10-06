@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 4
 PATCHLEVEL = 14
-SUBLEVEL = 294
+SUBLEVEL = 295
 EXTRAVERSION =
 NAME = Petit Gorille
 
@@ -313,6 +313,14 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 ARCH		:= arm64
 CROSS_COMPILE   := aarch64-linux-gnu-
 CROSS_COMPILE_ARM32   := arm-linux-gnueabi-
+
+ifeq ($(TARGET_PRODUCT),)
+$(warning Undefinded device! Default chopin.)
+TARGET_PRODUCT 	:= chopin
+export TARGET_PRODUCT
+else ifneq ($(TARGET_PRODUCT),chopin)
+$(error Error device!)
+endif
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -686,6 +694,19 @@ ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS   += -Os
 else
 KBUILD_CFLAGS   += -O2
+endif
+
+ifdef CONFIG_LLVM_POLLY
+KBUILD_CFLAGS	+= -mllvm -polly \
+		   -mllvm -polly-run-dce \
+		   -mllvm -polly-run-inliner \
+		   -mllvm -polly-isl-arg=--no-schedule-serialize-sccs \
+		   -mllvm -polly-ast-use-context \
+		   -mllvm -polly-detect-keep-going \
+		   -mllvm -polly-position=before-vectorizer \
+		   -mllvm -polly-vectorizer=stripmine \
+		   -mllvm -polly-detect-profitability-min-per-loop-insts=40 \
+		   -mllvm -polly-invariant-load-hoisting
 endif
 
 # Tell gcc to never replace conditional load with a non-conditional one
