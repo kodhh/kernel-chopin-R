@@ -33,10 +33,6 @@
 # applicable license agreements with MediaTek Inc.
 #
 
-$(shell rm -f $(O)/drivers/misc/mediatek/fpsgo_cus/src/*.o)
-$(shell mkdir -p $(O)/drivers/misc/mediatek/fpsgo_cus/src)
-$(shell cp $(srctree)/drivers/misc/mediatek/fpsgo_cus/src/*.o $(O)/drivers/misc/mediatek/fpsgo_cus/src)
-
 FBT_TOP = $(srctree)/drivers/misc/mediatek/performance/fpsgo_v3/fbt
 MTK_TOP = $(srctree)/drivers/misc/mediatek/
 
