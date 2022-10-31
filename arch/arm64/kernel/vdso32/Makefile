@@ -6,14 +6,10 @@
 
 ifeq ($(cc-name),clang)
   CC_ARM32 := $(CC) $(CLANG_TARGET_ARM32) -no-integrated-as $(CLANG_GCC32_TC) $(CLANG_PREFIX32)
+  LD_COMPAT := $(LD)
 else
   CC_ARM32 := $(CROSS_COMPILE_ARM32)$(cc-name)
-endif
-
-ifneq ($(LLVM),)
-LD_COMPAT ?= $(LD)
-else
-LD_COMPAT ?= $(CROSS_COMPILE_COMPAT)ld
+  LD_COMPAT := $(CROSS_COMPILE_ARM32)ld
 endif
 
 # Same as cc-*option, but using CC_ARM32 instead of CC
