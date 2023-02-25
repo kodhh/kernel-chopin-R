@@ -311,8 +311,8 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		:= arm64
-CROSS_COMPILE   := aarch64-linux-gnu-
-CROSS_COMPILE_ARM32   := arm-linux-gnueabi-
+export CROSS_COMPILE   := aarch64-linux-gnu-
+export CROSS_COMPILE_ARM32   := arm-linux-gnueabi-
 
 ifeq ($(TARGET_PRODUCT),)
 $(warning Undefinded device! Default chopin.)
@@ -388,12 +388,12 @@ CPP		= $(CC) -E
 ifneq ($(LLVM),)
 CC		= clang
 LD		= ld.lld
-AR		= llvm-ar
-NM		= llvm-nm
-OBJCOPY		= llvm-objcopy
-OBJDUMP		= llvm-objdump
-READELF		= llvm-readelf
-STRIP		= llvm-strip
+AR		= llvm-ar-12
+NM		= llvm-nm-12
+OBJCOPY		= llvm-objcopy-12
+OBJDUMP		= llvm-objdump-12
+READELF		= llvm-readelf-12
+STRIP		= llvm-strip-12
 HOSTLDFLAGS	+= -fuse-ld=lld
 else
 CC		= $(CROSS_COMPILE)gcc
@@ -689,8 +689,8 @@ LDFLAGS		+= -plugin LLVMgold.so
 endif
 # use llvm-ar for building symbol tables from IR files, and llvm-dis instead
 # of objdump for processing symbol versions and exports
-LLVM_AR		:= llvm-ar
-LLVM_NM		:= llvm-nm
+LLVM_AR		:= llvm-ar-12
+LLVM_NM		:= llvm-nm-12
 export LLVM_AR LLVM_NM
 endif
 
