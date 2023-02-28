@@ -26,7 +26,7 @@ ifdef CONFIG_FUNCTION_TRACER
 CFLAGS_REMOVE_irq_work.o = $(CC_FLAGS_FTRACE)
 endif
 
-ifeq ($(cc-name),clang)
+ifdef CONFIG_LTO_CLANG
 CFLAGS_kallsyms.o = -DCLANG_VERSION=$(shell $(srctree)/scripts/clang-version.sh -p $(CC))
 $(warning CLANG_VERSION=$(shell $(srctree)/scripts/clang-version.sh -p $(CC)))
 endif
