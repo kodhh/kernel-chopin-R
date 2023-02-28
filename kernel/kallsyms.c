@@ -212,11 +212,7 @@ static bool cleanup_symbol_name(char *s)
 		return true;
 	}
 
-	if (!IS_ENABLED(CONFIG_CFI_CLANG) ||
-	    !IS_ENABLED(CONFIG_THINLTO) ||
-	    CLANG_VERSION >= 130000)
-		return false;
-
+#if (defined(CONFIG_CFI_CLANG) && defined(CONFIG_THINLTO) && (CLANG_VERSION < 130000))
 	/*
 	 * Prior to LLVM 13, the following suffixes were observed when thinLTO
 	 * and CFI are both enabled:
@@ -227,6 +223,7 @@ static bool cleanup_symbol_name(char *s)
 		*res = '\0';
 		return true;
 	}
+#endif
 #endif
 
 	return false;
