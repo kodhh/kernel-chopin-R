@@ -388,12 +388,12 @@ CPP		= $(CC) -E
 ifneq ($(LLVM),)
 CC		= clang
 LD		= ld.lld
-AR		= llvm-ar-12
-NM		= llvm-nm-12
-OBJCOPY		= llvm-objcopy-12
-OBJDUMP		= llvm-objdump-12
-READELF		= llvm-readelf-12
-STRIP		= llvm-strip-12
+AR		= llvm-ar
+NM		= llvm-nm
+OBJCOPY		= llvm-objcopy
+OBJDUMP		= llvm-objdump
+READELF		= llvm-readelf
+STRIP		= llvm-strip
 HOSTLDFLAGS	+= -fuse-ld=lld
 else
 CC		= $(CROSS_COMPILE)gcc
@@ -689,8 +689,8 @@ LDFLAGS		+= -plugin LLVMgold.so
 endif
 # use llvm-ar for building symbol tables from IR files, and llvm-dis instead
 # of objdump for processing symbol versions and exports
-LLVM_AR		:= llvm-ar-12
-LLVM_NM		:= llvm-nm-12
+LLVM_AR		:= llvm-ar
+LLVM_NM		:= llvm-nm
 export LLVM_AR LLVM_NM
 endif
 
@@ -719,7 +719,9 @@ ifdef CONFIG_LLVM_POLLY
 KBUILD_CFLAGS	+= -mllvm -polly \
 		   -mllvm -polly-run-dce \
 		   -mllvm -polly-run-inliner \
-		   -mllvm -polly-opt-fusion=max \
+		   -mllvm -polly-reschedule=1 \
+		   -mllvm -polly-loopfusion-greedy=1 \
+		   -mllvm -polly-postopts=1 \
 		   -mllvm -polly-ast-use-context \
 		   -mllvm -polly-detect-keep-going \
 		   -mllvm -polly-vectorizer=stripmine \
