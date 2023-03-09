@@ -10,7 +10,7 @@ else
   CC_ARM32 := $(CROSS_COMPILE_ARM32)gcc
 endif
 
-ifneq (LLVM, )
+ifeq (LLVM, 1)
   LD_COMPAT := $(LD)
 else
   LD_COMPAT := $(CROSS_COMPILE_ARM32)ld

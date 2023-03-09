@@ -370,7 +370,7 @@ HOST_LFS_CFLAGS := $(shell getconf LFS_CFLAGS 2>/dev/null)
 HOST_LFS_LDFLAGS := $(shell getconf LFS_LDFLAGS 2>/dev/null)
 HOST_LFS_LIBS := $(shell getconf LFS_LIBS 2>/dev/null)
 
-ifneq ($(LLVM),)
+ifeq ($(LLVM), 1)
 HOSTCC	= clang
 HOSTCXX	= clang++
 else
@@ -385,15 +385,15 @@ HOST_LOADLIBES := $(HOST_LFS_LIBS)
 
 # Make variables (CC, etc...)
 CPP		= $(CC) -E
-ifneq ($(LLVM),)
+ifeq ($(LLVM), 1)
 CC		= clang
 LD		= ld.lld
-AR		= llvm-ar
-NM		= llvm-nm
-OBJCOPY		= llvm-objcopy
-OBJDUMP		= llvm-objdump
-READELF		= llvm-readelf
-STRIP		= llvm-strip
+AR		= llvm-ar-12
+NM		= llvm-nm-12
+OBJCOPY		= llvm-objcopy-12
+OBJDUMP		= llvm-objdump-12
+READELF		= llvm-readelf-12
+STRIP		= llvm-strip-12
 HOSTLDFLAGS	+= -fuse-ld=lld
 else
 CC		= $(CROSS_COMPILE)gcc
@@ -689,8 +689,8 @@ LDFLAGS		+= -plugin LLVMgold.so
 endif
 # use llvm-ar for building symbol tables from IR files, and llvm-dis instead
 # of objdump for processing symbol versions and exports
-LLVM_AR		:= llvm-ar
-LLVM_NM		:= llvm-nm
+LLVM_AR		:= llvm-ar-12
+LLVM_NM		:= llvm-nm-12
 export LLVM_AR LLVM_NM
 endif
 
@@ -710,18 +710,20 @@ KBUILD_CFLAGS	+= $(call cc-disable-warning, address-of-packed-member)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, attribute-alias)
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
-KBUILD_CFLAGS   += -Os
+KBUILD_CFLAGS	+= -Os
+else
+ifeq ($(cc-name),clang)
+KBUILD_CFLAGS   += -O3
 else
 KBUILD_CFLAGS   += -O2
+endif
 endif
 
 ifdef CONFIG_LLVM_POLLY
 KBUILD_CFLAGS	+= -mllvm -polly \
 		   -mllvm -polly-run-dce \
 		   -mllvm -polly-run-inliner \
-		   -mllvm -polly-reschedule=1 \
-		   -mllvm -polly-loopfusion-greedy=1 \
-		   -mllvm -polly-postopts=1 \
+		   -mllvm -polly-opt-fusion=max \
 		   -mllvm -polly-ast-use-context \
 		   -mllvm -polly-detect-keep-going \
 		   -mllvm -polly-vectorizer=stripmine \
