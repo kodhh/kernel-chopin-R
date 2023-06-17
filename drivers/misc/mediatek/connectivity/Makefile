@@ -15,33 +15,29 @@
 # If KERNELRELEASE is defined, we've been invoked from the
 # kernel build system and can use its language.
 ifneq ($(KERNELRELEASE),)
-    subdir-ccflags-y += -I$(srctree)/
-    subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include
-    subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include/clkbuf_v1
-    subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include/clkbuf_v1/$(MTK_PLATFORM)
-    subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/include
-    subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/include/mt-plat
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/base/power/include
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/base/power/include/clkbuf_v1
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/base/power/include/clkbuf_v1/$(MTK_PLATFORM)
+    subdir-ccflags-y += -Werror -I$(shell realpath $(srctree))/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/include
+    subdir-ccflags-y += -Werror -I$(shell realpath $(srctree))/drivers/misc/mediatek/include/mt-plat
 ifeq ($(CONFIG_MTK_PMIC_CHIP_MT6359),y)
-    subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/pmic/include/mt6359
+    subdir-ccflags-y += -Werror -I$(shell realpath $(srctree))/drivers/misc/mediatek/pmic/include/mt6359
 endif
 ifeq ($(CONFIG_MTK_PMIC_NEW_ARCH),y)
-    subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/pmic/include
+    subdir-ccflags-y += -Werror -I$(shell realpath $(srctree))/drivers/misc/mediatek/pmic/include
 endif
-    subdir-ccflags-y += -I$(srctree)/drivers/mmc/core
-    subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/eccci/$(MTK_PLATFORM)
-    subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/eccci/
-    subdir-ccflags-y += -I$(srctree)/drivers/clk/mediatek/
-    subdir-ccflags-y += -I$(srctree)/drivers/pinctrl/mediatek/
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/mmc/core
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/eccci/$(MTK_PLATFORM)
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/eccci/
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/clk/mediatek/
+    subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/pinctrl/mediatek/
 
     # Do Nothing, move to standalone repo
     MODULE_NAME := connadp
     obj-y += $(MODULE_NAME).o
     $(MODULE_NAME)-objs += common/connectivity_build_in_adapter.o
     $(MODULE_NAME)-objs += common/wmt_build_in_adapter.o
-
-
-    # Do build-in for Makefile checking
-    export CONFIG_WLAN_DRV_BUILD_IN=y
 
     ifeq ($(CONFIG_WLAN_DRV_BUILD_IN),y)
         $(info $$CONFIG_MTK_COMBO_CHIP is [${CONFIG_MTK_COMBO_CHIP}])
@@ -50,18 +46,18 @@ endif
 
         ifneq (,$(filter $(CONFIG_MTK_COMBO_CHIP), "CONSYS_6885" "CONSYS_6893"))
             export MTK_COMBO_CHIP=CONNAC2X2_SOC3_0
-            PATH_TO_WMT_DRV      = $(srctree)/drivers/misc/mediatek/connectivity/conninfra
-            subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/connectivity/wmt_drv/include
+            PATH_TO_WMT_DRV      = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/conninfra
+            subdir-ccflags-y += -I$(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/wmt_drv/include
         else ifneq (,$(filter $(CONFIG_MTK_COMBO_CHIP), "CONSYS_6779" "CONSYS_6873" "CONSYS_6853"))
             export MTK_COMBO_CHIP=CONNAC2X2
-            PATH_TO_WMT_DRV      = $(srctree)/drivers/misc/mediatek/connectivity/common
+            PATH_TO_WMT_DRV      = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/common
         else
             export MTK_COMBO_CHIP=CONNAC
-            PATH_TO_WMT_DRV      = $(srctree)/drivers/misc/mediatek/connectivity/common
+            PATH_TO_WMT_DRV      = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/common
         endif
 
-        PATH_TO_WLAN_CHR_DRV = $(srctree)/drivers/misc/mediatek/connectivity/wlan/adaptor
-        PATH_TO_WLAN_DRV     = $(srctree)/drivers/misc/mediatek/connectivity/wlan/core/gen4m
+        PATH_TO_WLAN_CHR_DRV = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/wlan/adaptor
+        PATH_TO_WLAN_DRV     = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/wlan/core/gen4m
 
         ABS_PATH_TO_WMT_DRV      = $(PATH_TO_WMT_DRV)
         ABS_PATH_TO_WLAN_CHR_DRV = $(PATH_TO_WLAN_CHR_DRV)
@@ -82,13 +78,13 @@ endif
         $(warning symbolic link to $(PATH_TO_WLAN_CHR_DRV))
         $(warning symbolic link to $(PATH_TO_WLAN_DRV))
 
-        $(shell unlink $(srctree)/$(src)/wmt_drv)
-        $(shell unlink $(srctree)/$(src)/wmt_chrdev_wifi)
-        $(shell unlink $(srctree)/$(src)/wlan_drv_gen4m)
+        $(shell unlink $(shell realpath $(srctree))/$(src)/wmt_drv)
+        $(shell unlink $(shell realpath $(srctree))/$(src)/wmt_chrdev_wifi)
+        $(shell unlink $(shell realpath $(srctree))/$(src)/wlan_drv_gen4m)
 
-        $(shell ln -s $(ABS_PATH_TO_WMT_DRV)      $(srctree)/$(src)/wmt_drv)
-        $(shell ln -s $(ABS_PATH_TO_WLAN_CHR_DRV) $(srctree)/$(src)/wmt_chrdev_wifi)
-        $(shell ln -s $(ABS_PATH_TO_WLAN_DRV)     $(srctree)/$(src)/wlan_drv_gen4m)
+        $(shell ln -s $(ABS_PATH_TO_WMT_DRV)      $(shell realpath $(srctree))/$(src)/wmt_drv)
+        $(shell ln -s $(ABS_PATH_TO_WLAN_CHR_DRV) $(shell realpath $(srctree))/$(src)/wmt_chrdev_wifi)
+        $(shell ln -s $(ABS_PATH_TO_WLAN_DRV)     $(shell realpath $(srctree))/$(src)/wlan_drv_gen4m)
 
         # for gen4m options
         export CONFIG_MTK_COMBO_WIFI_HIF=axi
@@ -120,17 +116,17 @@ endif
 
         # For BT built-in mode start @{
         ifneq (,$(filter $(CONFIG_MTK_COMBO_CHIP), "CONSYS_6885"))
-             PATH_TO_BT_DRV       = $(srctree)/drivers/misc/mediatek/connectivity/bt/mt66xx/connac2
+             PATH_TO_BT_DRV       = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/bt/mt66xx/connac2
              export _MTK_BT_CHIP=MTK_CONSYS_MT6885
          else ifneq (,$(filter $(CONFIG_MTK_COMBO_CHIP), "CONSYS_6893"))
-             PATH_TO_BT_DRV       = $(srctree)/drivers/misc/mediatek/connectivity/bt/mt66xx/connac2
+             PATH_TO_BT_DRV       = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/bt/mt66xx/connac2
              export _MTK_BT_CHIP=MTK_CONSYS_MT6893
          else
-             PATH_TO_BT_DRV       = $(srctree)/drivers/misc/mediatek/connectivity/bt/mt66xx/legacy
+             PATH_TO_BT_DRV       = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/bt/mt66xx/legacy
          endif
          ABS_PATH_TO_BT_DRV       = $(PATH_TO_BT_DRV)
-         $(shell unlink $(srctree)/$(src)/bt_drv)
-         $(shell ln -s $(ABS_PATH_TO_BT_DRV)      $(srctree)/$(src)/bt_drv)
+         $(shell unlink $(shell realpath $(srctree))/$(src)/bt_drv)
+         $(shell ln -s $(ABS_PATH_TO_BT_DRV)      $(shell realpath $(srctree))/$(src)/bt_drv)
          obj-y += bt_drv/
         # @} For BT built-in mode end
 
@@ -154,14 +150,14 @@ endif
         # @} For FM built-in mode end
 
         # For GPS built-in mode start @{
-         PATH_TO_GPS_DRV      = $(srctree)/drivers/misc/mediatek/connectivity/gps
+         PATH_TO_GPS_DRV      = $(shell realpath $(srctree))/drivers/misc/mediatek/connectivity/gps
          ABS_PATH_TO_GPS_DRV      = $(PATH_TO_GPS_DRV)
          ifeq (,$(wildcard $(ABS_PATH_TO_GPS_DRV)))
              $(error $(ABS_PATH_TO_GPS_DRV) is not existed)
          endif
          $(warning symbolic link to $(PATH_TO_GPS_DRV))
-         $(shell unlink $(srctree)/$(src)/gps_drv)
-         $(shell ln -s $(ABS_PATH_TO_GPS_DRV)      $(srctree)/$(src)/gps_drv)
+         $(shell unlink $(shell realpath $(srctree))/$(src)/gps_drv)
+         $(shell ln -s $(ABS_PATH_TO_GPS_DRV)      $(shell realpath $(srctree))/$(src)/gps_drv)
          obj-y += gps_drv/
         # @} For GPS built-in mode end
 
