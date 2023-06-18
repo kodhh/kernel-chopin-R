@@ -1,0 +1,4 @@
+__crc_is_teei_ready = 0xa40b6c88;
+__crc_register_fdrv = 0xb4700028;
+__crc_fdrv_notify = 0xdcc9ec36;
+__crc_teei_forward_call = 0x7458429b;

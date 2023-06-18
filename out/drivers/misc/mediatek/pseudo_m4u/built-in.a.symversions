@@ -1,0 +1,9 @@
+__crc_m4u_switch_acp = 0x3a7c31fc;
+__crc___m4u_dump_pgtable = 0xe84c074a;
+__crc_m4u_dump_pgtable = 0x2f21f8ad;
+__crc_pseudo_get_m4u_client = 0x78799239;
+__crc_pseudo_put_m4u_client = 0x695d2a48;
+__crc_pseudo_m4u_db_debug = 0xb8fd99d3;
+__crc_m4u_mva_map_kernel = 0xdede7803;
+__crc_m4u_mva_unmap_kernel = 0x8c484526;
+__crc_pseudo_dump_iova_reserved_region = 0x87bf2f03;

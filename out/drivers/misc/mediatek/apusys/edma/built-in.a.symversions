@@ -1,0 +1,7 @@
+__crc_edma_set_external_with_normal = 0xaf204a28;
+__crc_edma_set_external_with_fill = 0xd029addf;
+__crc_edma_set_external_with_numerical = 0x4262126c;
+__crc_edma_set_external_with_format = 0x52a1efcf;
+__crc_edma_set_external_with_compress = 0x3ffa11c3;
+__crc_edma_set_external_with_decompress = 0x01457078;
+__crc_edma_set_external_with_raw = 0xbe688796;

@@ -1,0 +1,5 @@
+__crc_is_adsp_system_running = 0xff67d0b0;
+__crc_adsp_ipi_registration = 0x94e16ca6;
+__crc_adsp_ipi_unregistration = 0x2d2e1e1e;
+__crc_get_adsp_misc_buffer = 0x36bc359e;
+__crc_get_adsp_aee_buffer = 0x91761a62;

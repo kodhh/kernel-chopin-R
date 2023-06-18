@@ -1,0 +1,12 @@
+__crc_rawbulk_usb_state_check = 0x3ec6ae48;
+__crc_rawbulk_lookup_function = 0x4d8e76ec;
+__crc_rawbulk_check_enable = 0xd71c4ccf;
+__crc_rawbulk_disable_function = 0x536abf1a;
+__crc_rawbulk_push_upstream_buffer = 0x0097014a;
+__crc_rawbulk_start_transactions = 0x57c5fd0a;
+__crc_rawbulk_stop_transactions = 0xab1111aa;
+__crc_rawbulk_transfer_statistics = 0xa0000b42;
+__crc_rawbulk_bind_function = 0x90ed51c7;
+__crc_rawbulk_unbind_function = 0xfd89e889;
+__crc_rawbulk_bind_sdio_channel = 0x04cc5177;
+__crc_rawbulk_unbind_sdio_channel = 0x0e7e376f;

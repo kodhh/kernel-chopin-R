@@ -1,0 +1,2 @@
+__crc_mt6360_pmic_regmap_register = 0x8969eea2;
+__crc_mt6360_pmic_regmap_unregister = 0x418b6373;

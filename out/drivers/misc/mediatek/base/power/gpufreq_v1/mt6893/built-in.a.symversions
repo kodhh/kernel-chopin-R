@@ -1,0 +1,4 @@
+__crc_mt_gpufreq_get_thermal_limit_freq = 0xa79a42ed;
+__crc_mt_gpufreq_get_cur_freq = 0x1201480c;
+__crc_mt_gpufreq_get_limit_user = 0x5431466e;
+__crc_mt_gpufreq_get_cur_volt = 0x6b662417;

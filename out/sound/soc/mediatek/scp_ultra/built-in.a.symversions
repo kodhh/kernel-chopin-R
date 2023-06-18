@@ -1,0 +1,3 @@
+__crc_mtk_scp_ultra_free_mem = 0xb9ce85f1;
+__crc_mtk_scp_ultra_allocate_mem = 0x5dfb0b34;
+__crc_mtk_scp_ultra_pcm_platform = 0x0a078f79;

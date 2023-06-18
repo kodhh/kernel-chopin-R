@@ -1,0 +1,16 @@
+__crc_dummy_dma_ops = 0x1a09b974;
+__crc_dma_alloc_coherent_fix_iova = 0x1532af49;
+__crc_dma_free_coherent_fix_iova = 0x97e0c87d;
+__crc_pfn_valid = 0x51e77c97;
+__crc___cpu_copy_user_page = 0x49e0fd21;
+__crc___cpu_clear_user_page = 0x43c2a786;
+__crc_flush_dcache_page = 0x757f62ca;
+__crc_flush_icache_range = 0x05186ca4;
+__crc___ioremap = 0xf24b3dfe;
+__crc___iounmap = 0x45a55ec8;
+__crc_ioremap_cache = 0xd4e7aa3d;
+__crc_kimage_voffset = 0x228f4555;
+__crc_empty_zero_page = 0x815f2897;
+__crc_phys_mem_access_prot = 0x7cbca80c;
+__crc_set_memory_nx = 0x892b26a0;
+__crc_set_memory_x = 0x988ed85d;

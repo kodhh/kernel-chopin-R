@@ -1,0 +1,14 @@
+__crc_mtk_btif_rxd_be_blocked_flag_get = 0x1a9e90a6;
+__crc_mtk_wcn_btif_open = 0xb32f99b1;
+__crc_mtk_wcn_btif_close = 0x05b602b4;
+__crc_mtk_wcn_btif_write = 0x281ca2ad;
+__crc_mtk_wcn_btif_dpidle_ctrl = 0xd54d6da4;
+__crc_mtk_wcn_btif_rx_cb_register = 0x2e8a2538;
+__crc_mtk_wcn_btif_wakeup_consys = 0x30b59ea8;
+__crc_mtk_wcn_btif_loopback_ctrl = 0xa0fcb7c0;
+__crc_mtk_wcn_btif_dbg_ctrl = 0xf8c1afa1;
+__crc_mtk_wcn_btif_parser_wmt_evt = 0xe9a009d3;
+__crc_mtk_btif_exp_rx_has_pending_data = 0x93263291;
+__crc_mtk_btif_exp_tx_has_pending_data = 0x08f6325f;
+__crc_mtk_btif_is_tx_complete = 0x65494a34;
+__crc_mtk_btif_exp_rx_thread_get = 0xb36c6468;

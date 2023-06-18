@@ -1,0 +1,7 @@
+__crc_mtk_mcupm_cm_is_notified = 0x7d239fb5;
+__crc_mtk_set_mcupm_pll_mode = 0x490a57fc;
+__crc_mtk_get_mcupm_pll_mode = 0xf4eef76f;
+__crc_mtk_set_mcupm_buck_mode = 0x6ed11ffa;
+__crc_mtk_get_mcupm_buck_mode = 0x15f825f8;
+__crc_mtk_suspend_gpio_dbg = 0x1d5912fa;
+__crc_mtk_suspend_clk_dbg = 0x7ccfaba2;

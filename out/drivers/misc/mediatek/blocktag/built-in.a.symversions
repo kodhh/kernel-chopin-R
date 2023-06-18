@@ -1,0 +1,16 @@
+__crc_mtk_btag_pidlog_insert = 0x23e74c0e;
+__crc_mtk_btag_pidlog_map_sg = 0x6517be53;
+__crc_mtk_btag_pidlog_submit_bio = 0xd602d451;
+__crc_mtk_btag_pidlog_set_pid = 0xe64051da;
+__crc_mtk_btag_vmstat_eval = 0xe26964fc;
+__crc_mtk_btag_pidlog_eval = 0x6ec35886;
+__crc_mtk_btag_cpu_eval = 0x39fda89a;
+__crc_mtk_btag_throughput_eval = 0x8471bb71;
+__crc_mtk_btag_klog = 0xed95c03e;
+__crc_mtk_btag_task_timetag = 0x03fd73bf;
+__crc_mtk_btag_seq_time = 0x94938286;
+__crc_mtk_btag_curr_trace = 0xe7739eec;
+__crc_mtk_btag_next_trace = 0x8e10562d;
+__crc_mtk_btag_alloc = 0x3034952c;
+__crc_mtk_btag_free = 0x52994805;
+__crc_get_blockio_aee_buffer = 0xce3d7932;

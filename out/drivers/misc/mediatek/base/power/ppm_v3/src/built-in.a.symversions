@@ -1,0 +1,4 @@
+__crc_mt_ppm_sysboost_core = 0xcff30015;
+__crc_mt_ppm_sysboost_freq = 0xce0c30e0;
+__crc_mt_ppm_sysboost_set_core_limit = 0x5a81f776;
+__crc_mt_ppm_sysboost_set_freq_limit = 0x5400ade0;

@@ -1,0 +1,14 @@
+__crc_rproc_da_to_va = 0xb6f90986;
+__crc_rproc_boot = 0xd8653aa0;
+__crc_rproc_shutdown = 0x8bb1a1f4;
+__crc_rproc_get_by_phandle = 0x9c005f49;
+__crc_rproc_add = 0x57b35606;
+__crc_rproc_alloc = 0x6d3e07b7;
+__crc_rproc_free = 0xf2d70015;
+__crc_rproc_put = 0xe36a98a4;
+__crc_rproc_del = 0x6f87ec02;
+__crc_rproc_add_subdev = 0x05ef0727;
+__crc_rproc_remove_subdev = 0x6fd428cc;
+__crc_rproc_get_by_child = 0x66468e6a;
+__crc_rproc_report_crash = 0x9f3159ef;
+__crc_rproc_vq_interrupt = 0xeb0e414d;

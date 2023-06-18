@@ -1,0 +1,17 @@
+__crc_mmdvfs_qos_get_freq_steps = 0xb1575fc6;
+__crc_mm_qos_add_request = 0x9c2eb0eb;
+__crc_mm_qos_set_request = 0xdddbf902;
+__crc_mm_qos_set_bw_request = 0x18a60713;
+__crc_mm_qos_set_hrt_request = 0x1b0c8544;
+__crc_mm_qos_update_all_request = 0x4a7ab0d1;
+__crc_mm_qos_update_all_request_zero = 0x9788c7d3;
+__crc_mm_qos_remove_all_request = 0x8aa2fcde;
+__crc_mm_hrt_get_available_hrt_bw = 0xb8dc9dd3;
+__crc_mm_hrt_add_bw_throttle_notifier = 0xca2e3a19;
+__crc_mm_hrt_remove_bw_throttle_notifier = 0x77a1b8ec;
+__crc_mmdvfs_set_max_camera_hrt_bw = 0x44142afe;
+__crc_mmdvfs_qos_get_freq = 0x6d173a56;
+__crc_mmdvfs_qos_limit_config = 0x26e2ca2e;
+__crc_mmdvfs_qos_force_step = 0xbbafb2df;
+__crc_mmdvfs_autok_qos_enable = 0x57a23883;
+__crc_mmdvfs_qos_enable = 0x86c74237;

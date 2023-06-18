@@ -1,0 +1,5 @@
+__crc_mt_ptpgpu_lock = 0x05fbd722;
+__crc_mt_ptpgpu_unlock = 0x4ce32816;
+__crc_mt_eemg_opp_num = 0x85d86dab;
+__crc_mt_eemg_opp_freq = 0x6dc19315;
+__crc_mt_eemg_opp_status = 0xf4a2e36a;

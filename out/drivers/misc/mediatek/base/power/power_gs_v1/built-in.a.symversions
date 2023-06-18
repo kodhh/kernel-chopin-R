@@ -1,0 +1,7 @@
+__crc_mt_power_gs_t_dump_suspend = 0xcbe78263;
+__crc_mt_power_gs_t_dump_dpidle = 0x4a78a54d;
+__crc_mt_power_gs_t_dump_sodi3 = 0x5df3be0f;
+__crc_mt_power_gs_dump_suspend = 0x419e09dc;
+__crc_mt_power_gs_dump_dpidle = 0xfae4b986;
+__crc_mt_power_gs_dump_sodi3 = 0xefbb34be;
+__crc_snapshot_golden_setting = 0x88fec3b2;

@@ -1,0 +1,9 @@
+__crc_vcorefs_get_src_req_num = 0x67c99abe;
+__crc_vcorefs_get_src_req_name = 0xb1618a62;
+__crc_vcorefs_get_src_req = 0x9ddc3b88;
+__crc_get_cur_ddr_ratio = 0x4eca130a;
+__crc_vcorefs_get_md_scenario = 0x7b35e60f;
+__crc_vcorefs_get_num_opp = 0x6e008147;
+__crc_vcorefs_get_opp_info_num = 0xcc980630;
+__crc_vcorefs_get_opp_info_name = 0xe228fd87;
+__crc_vcorefs_get_opp_info = 0xfdc4df1d;

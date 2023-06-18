@@ -1,0 +1,3 @@
+__crc_upmu_get_reg_value = 0xaa6a1ef5;
+__crc_lbat_user_register = 0x18a7e89e;
+__crc_lbat_user_set_debounce = 0x8cafd2c8;

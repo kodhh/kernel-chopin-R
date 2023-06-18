@@ -1,0 +1,3 @@
+__crc_mrdump_mini_per_cpu_regs = 0xd14fa8ac;
+__crc_mrdump_mini_ke_cpu_regs = 0xd01d0bd1;
+__crc_ipanic_recursive_ke = 0x1fccd691;

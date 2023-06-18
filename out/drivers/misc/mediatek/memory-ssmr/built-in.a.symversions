@@ -1,0 +1,6 @@
+__crc_svp_region_offline64 = 0x8ee9b995;
+__crc_svp_region_offline = 0xa90a8ca1;
+__crc_secmem_region_online = 0xbaf4cf81;
+__crc_svp_region_online = 0xff69417d;
+__crc_ssmr_offline = 0x469103ee;
+__crc_ssmr_online = 0xb8313cbf;

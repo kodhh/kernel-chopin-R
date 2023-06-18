@@ -1,0 +1,4 @@
+__crc_trusted_mem_api_alloc = 0xe231cd24;
+__crc_trusted_mem_api_alloc_zero = 0x3374778b;
+__crc_trusted_mem_api_unref = 0xfe5fd97e;
+__crc_trusted_mem_api_get_region_info = 0x528a4fd3;

@@ -1,0 +1,3 @@
+__crc_mtk_lpm_irqremain_list_release = 0x7a15b114;
+__crc_mtk_lpm_irqremain_get = 0xe754da60;
+__crc_mtk_lpm_irqremain_put = 0x2486daf1;

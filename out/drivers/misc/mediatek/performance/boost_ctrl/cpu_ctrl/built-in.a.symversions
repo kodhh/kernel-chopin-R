@@ -1,0 +1,3 @@
+__crc_update_userlimit_cpu_freq = 0x89737be2;
+__crc_perfmgr_common_userlimit_cpu_freq = 0x00af062d;
+__crc_update_isolation_cpu = 0xac1115f8;

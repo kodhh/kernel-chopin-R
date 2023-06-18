@@ -1,0 +1,4 @@
+__crc_get_boot_mode = 0x71408cd6;
+__crc_get_boot_type = 0x4d0123f9;
+__crc_is_meta_mode = 0x6992ee3e;
+__crc_is_advanced_meta_mode = 0x7b12f203;

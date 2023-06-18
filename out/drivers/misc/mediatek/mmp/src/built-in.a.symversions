@@ -1,0 +1,15 @@
+__crc_mmprofile_register_event = 0x7ffb1903;
+__crc_mmprofile_find_event = 0x53e12bda;
+__crc_mmprofile_enable_ftrace_event = 0x63f47b21;
+__crc_mmprofile_enable_event = 0x06e73584;
+__crc_mmprofile_enable_ftrace_event_recursive = 0x0c6ce102;
+__crc_mmprofile_enable_event_recursive = 0x560a0e63;
+__crc_mmprofile_query_enable = 0x34887b93;
+__crc_mmprofile_log_ex = 0xd77d7c9c;
+__crc_mmprofile_log = 0xb05a858b;
+__crc_mmprofile_log_meta = 0x44480f47;
+__crc_mmprofile_log_meta_structure = 0x9edb8136;
+__crc_mmprofile_log_meta_string_ex = 0xdbb42d01;
+__crc_mmprofile_log_meta_string = 0xb18752cc;
+__crc_mmprofile_log_meta_bitmap = 0xd0c189d4;
+__crc_mmprofile_log_meta_yuv_bitmap = 0xaa7dc2bb;

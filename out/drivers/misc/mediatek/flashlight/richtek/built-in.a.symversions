@@ -1,0 +1,14 @@
+__crc_flashlight_device_register = 0x0cf44917;
+__crc_flashlight_device_unregister = 0xee43e029;
+__crc_flashlight_list_color_temperature = 0x174ded12;
+__crc_flashlight_set_color_temperature = 0x58b602a7;
+__crc_flashlight_set_torch_brightness = 0x6cd38c8f;
+__crc_flashlight_set_strobe_brightness = 0x5fde0da0;
+__crc_flashlight_list_strobe_timeout = 0xfaec9c86;
+__crc_flashlight_set_strobe_timeout = 0xf0651b6e;
+__crc_flashlight_set_mode = 0xa2831601;
+__crc_flashlight_strobe = 0x03acb25b;
+__crc_flashlight_is_ready = 0xaf61f0d4;
+__crc_find_flashlight_by_name = 0x44024daa;
+__crc_flashlight_strobe_charge = 0x72a7fafd;
+__crc_rt_fled_get_dev = 0x96d45f66;

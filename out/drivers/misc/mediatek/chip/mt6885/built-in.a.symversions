@@ -1,0 +1,4 @@
+__crc_mt_get_chip_id = 0x91388794;
+__crc_mt_get_chip_hw_code = 0x4afc7d72;
+__crc_mt_get_chip_sw_ver = 0x43c7547a;
+__crc_mt_get_chip_info = 0xaae2ed07;

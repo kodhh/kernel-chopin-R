@@ -1,0 +1,5 @@
+__crc_devinfo_get_size = 0x4254493c;
+__crc_devinfo_ready = 0xecd8a373;
+__crc_get_devinfo_with_index = 0x776bac1a;
+__crc_get_hrid_size = 0x45bd2458;
+__crc_get_hrid = 0x98b1d713;

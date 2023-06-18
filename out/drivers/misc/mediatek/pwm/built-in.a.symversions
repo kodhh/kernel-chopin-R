@@ -1,0 +1,3 @@
+__crc_pwm_set_easy_config = 0x61af9a87;
+__crc_pwm_set_spec_config = 0xd50c823f;
+__crc_mt_pwm_dump_regs = 0x0c4339a9;

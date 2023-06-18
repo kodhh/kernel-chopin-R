@@ -1,0 +1,3 @@
+__crc_pob_xpufreq_register_client = 0x519ca812;
+__crc_pob_xpufreq_unregister_client = 0xc319d468;
+__crc_pob_xpufreq_update = 0xffbb3c45;

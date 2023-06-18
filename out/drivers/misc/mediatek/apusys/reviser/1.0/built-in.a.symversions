@@ -1,0 +1,4 @@
+__crc_reviser_get_vlm = 0x444a600e;
+__crc_reviser_free_vlm = 0xebf40565;
+__crc_reviser_set_context = 0xb4abc8f9;
+__crc_reviser_get_resource_vlm = 0xa444f58b;

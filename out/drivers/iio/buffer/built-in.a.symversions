@@ -1,0 +1,4 @@
+__crc_iio_kfifo_allocate = 0xe6c6f1bc;
+__crc_iio_kfifo_free = 0x6f596743;
+__crc_devm_iio_kfifo_allocate = 0xe2e50bcd;
+__crc_devm_iio_kfifo_free = 0xd3f0a3e6;

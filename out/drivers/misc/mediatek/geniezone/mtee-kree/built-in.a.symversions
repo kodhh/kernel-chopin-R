@@ -1,0 +1,16 @@
+__crc_KREE_SessionToTID = 0xdea3ea5b;
+__crc_KREE_CreateSession = 0xfe95be79;
+__crc_KREE_CreateSessionWithTag = 0x2916d984;
+__crc_KREE_CloseSession = 0x177f776f;
+__crc_KREE_TeeServiceCall = 0x42e35483;
+__crc_KREE_UnregisterSharedmem = 0xcec35697;
+__crc_KREE_AppendSecureMultichunkmem = 0xd7b19355;
+__crc_KREE_ReleaseSecureMultichunkmem = 0x3f84860c;
+__crc_KREE_ReferenceSecureMultichunkmem = 0x6093c016;
+__crc_KREE_ION_AllocChunkmem = 0x325f6cbd;
+__crc_KREE_ION_ZallocChunkmem = 0xdb668d16;
+__crc_KREE_ION_ReferenceChunkmem = 0x2b2cbed3;
+__crc_KREE_ION_UnreferenceChunkmem = 0x50d5dc1b;
+__crc_KREE_ION_QueryChunkmem_TEST = 0x6632690f;
+__crc_KREE_QueryChunkmem_TEST = 0x2fef81df;
+__crc_KREE_ConfigSecureMultiChunkMemInfo = 0x79f6407e;

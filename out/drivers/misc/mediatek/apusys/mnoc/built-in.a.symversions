@@ -1,0 +1,4 @@
+__crc_apu_cmd_qos_start = 0xa0deb4d5;
+__crc_apu_cmd_qos_suspend = 0xbf0aebbd;
+__crc_apu_cmd_qos_end = 0x53a36941;
+__crc_get_apu_iommu_tfrp = 0xa0f3c611;

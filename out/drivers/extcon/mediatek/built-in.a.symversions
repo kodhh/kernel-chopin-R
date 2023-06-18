@@ -1,0 +1,6 @@
+__crc_mt_usb_connect = 0x8dfe072a;
+__crc_mt_usb_disconnect = 0xc479659a;
+__crc_mt_usbhost_connect = 0x3838a2ca;
+__crc_mt_usbhost_disconnect = 0xccec9aa6;
+__crc_mt_vbus_on = 0xa3d1ecbb;
+__crc_mt_vbus_off = 0xa021784f;

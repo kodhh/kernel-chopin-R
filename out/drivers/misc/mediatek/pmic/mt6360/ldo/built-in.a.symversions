@@ -1,0 +1,2 @@
+__crc_mt6360_ldo_regmap_register = 0x65462379;
+__crc_mt6360_ldo_regmap_unregister = 0x815a7bfd;

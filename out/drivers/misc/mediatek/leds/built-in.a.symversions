@@ -1,0 +1,6 @@
+__crc_mtk_leds_register_notifier = 0x9d282f02;
+__crc_mtk_leds_unregister_notifier = 0xf79d16ab;
+__crc_mtk_leds_call_notifier = 0xea7a26a3;
+__crc_setMaxBrightness = 0x9217b64d;
+__crc_mt_leds_brightness_set = 0x0d9d130b;
+__crc_mt_leds_brightness_get = 0x73056e37;

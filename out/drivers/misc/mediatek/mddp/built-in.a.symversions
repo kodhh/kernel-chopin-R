@@ -1,0 +1,2 @@
+__crc_mddp_drv_attach = 0x72817cba;
+__crc_mddp_drv_detach = 0x3985abb3;

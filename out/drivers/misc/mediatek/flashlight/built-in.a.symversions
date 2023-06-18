@@ -1,0 +1,17 @@
+__crc_flashlight_verify_type_index = 0x27f5bfbf;
+__crc_flashlight_verify_ct_index = 0x5ee5f00b;
+__crc_flashlight_verify_part_index = 0x6b1c7f81;
+__crc_flashlight_verify_index = 0x60ce473e;
+__crc_flashlight_get_type_id = 0x7767643d;
+__crc_flashlight_get_ct_id = 0xcd9f9e04;
+__crc_flashlight_get_part_id = 0xa042c080;
+__crc_flashlight_get_type_index = 0x3447805a;
+__crc_flashlight_get_ct_index = 0x42c82de6;
+__crc_flashlight_get_part_index = 0x78ae4064;
+__crc_flashlight_dev_register = 0x4f06fc7f;
+__crc_flashlight_dev_unregister = 0x9382de14;
+__crc_flashlight_dev_register_by_device_id = 0xe8fd8896;
+__crc_flashlight_dev_unregister_by_device_id = 0x39fd4992;
+__crc_flashlight_get_max_duty = 0xbb4429fc;
+__crc_flashlight_set_cooler_level = 0x6638fd43;
+__crc_strobe_VDIrq = 0x271f2a06;

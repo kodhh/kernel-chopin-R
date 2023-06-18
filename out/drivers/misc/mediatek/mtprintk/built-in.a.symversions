@@ -1,0 +1,2 @@
+__crc_mt_disable_uart = 0xbd1a9029;
+__crc_mt_enable_uart = 0x8a762a60;

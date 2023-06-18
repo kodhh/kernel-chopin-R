@@ -1,0 +1,15 @@
+__crc_mt_thermalsampler_registerCB = 0xa4abac0d;
+__crc_tscpu_met_lock = 0xce5fc15a;
+__crc_tscpu_met_unlock = 0x5fd1a51d;
+__crc_mtk_gpufreq_register = 0xc2a62cf4;
+__crc_tscpu_get_cpu_temp_met = 0xbe8f8ad0;
+__crc_mtk_mdm_get_tx_power = 0xb69170d1;
+__crc_mtk_mdm_get_rf_temp = 0x907c0ca7;
+__crc_mtk_mdm_get_md_info = 0x825c63cf;
+__crc_mtk_mdm_get_mdinfoex = 0x981079bd;
+__crc_mtk_mdm_set_mdinfoex_threshold = 0xc446864a;
+__crc_mtk_mdm_start_query = 0xb9ca3c58;
+__crc_mtk_mdm_stop_query = 0x5b8cef9e;
+__crc_mtk_mdm_set_signal_period = 0x57df73d7;
+__crc_mtk_mdm_set_md1_signal_period = 0x49e6e09b;
+__crc_mtk_mdm_set_md2_signal_period = 0x11f849b3;
