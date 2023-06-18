@@ -1,8 +1,0 @@
-__crc_smi_mm_first_get = 0x85896934;
-__crc_smi_bus_prepare_enable = 0x8a88cd75;
-__crc_smi_bus_disable_unprepare = 0xe5c697fd;
-__crc_smi_bwl_update = 0xd7e11f48;
-__crc_smi_ostd_update = 0x1b96e9bd;
-__crc_smi_sysram_enable = 0x461bf8be;
-__crc_smi_debug_bus_hang_detect = 0xec86e3db;
-__crc_smi_register = 0x380407c8;

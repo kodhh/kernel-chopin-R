@@ -1,3 +1,0 @@
-__crc_gauge_device_register = 0x921ac01a;
-__crc_gauge_device_unregister = 0x0e8347c2;
-__crc_get_gauge_by_name = 0x1dba741a;

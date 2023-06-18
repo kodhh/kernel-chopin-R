@@ -1,7 +1,0 @@
-__crc_update_userlimit_cpu_freq = 0x89737be2;
-__crc_perfmgr_common_userlimit_cpu_freq = 0x00af062d;
-__crc_update_isolation_cpu = 0xac1115f8;
-__crc_update_eas_uclamp_min = 0xf0da6ee8;
-__crc_update_prefer_idle_value = 0xc7521b7d;
-__crc_topo_ctrl_get_nr_clusters = 0xcdac5f83;
-__crc_topo_ctrl_get_cluster_cpu_id = 0x40e3ef06;

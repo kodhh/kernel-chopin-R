@@ -1,6 +1,0 @@
-__crc_mt_freqhopping_devctl = 0xe43b36e2;
-__crc_mt_dfs_general_pll = 0x9c0ffc72;
-__crc_mt_dfs_armpll = 0xc8719c89;
-__crc_mt_fh_popod_save = 0xef72b513;
-__crc_mt_fh_popod_restore = 0x8b1f338b;
-__crc_freqhopping_config = 0x576af291;

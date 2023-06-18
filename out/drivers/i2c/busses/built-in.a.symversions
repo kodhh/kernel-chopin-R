@@ -1,8 +1,0 @@
-__crc_dump_i2c_status = 0x7ade1cbc;
-__crc_mtk_i2c_transfer = 0x8d6c6246;
-__crc_hw_trig_i2c_enable = 0x4e99fc7b;
-__crc_hw_trig_i2c_disable = 0xde391f16;
-__crc_hw_trig_i2c_transfer = 0x762514b6;
-__crc_i2c_ccu_enable = 0x0921588c;
-__crc_i2c_ccu_disable = 0x7b47d802;
-__crc_mt_i2c_test = 0x116e0af4;

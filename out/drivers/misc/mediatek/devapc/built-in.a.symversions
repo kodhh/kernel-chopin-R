@@ -1,4 +1,0 @@
-__crc_register_devapc_vio_callback = 0x516204c2;
-__crc_mtk_devapc_probe = 0x2c8c2265;
-__crc_mtk_devapc_remove = 0xd62ac003;
-__crc_devapc_catch_illegal_range = 0xd7d72e37;

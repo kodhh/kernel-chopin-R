@@ -1,9 +1,0 @@
-__crc_get_sspm_semaphore = 0x96359c96;
-__crc_release_sspm_semaphore = 0x90cd4f79;
-__crc_sspm_schedule_work = 0x22a41dbf;
-__crc_is_sspm_ready = 0x34be265c;
-__crc_sspm_ipidev = 0x5f24c4d9;
-__crc_sspm_reserve_mem_get_phys = 0xc2aeee33;
-__crc_sspm_reserve_mem_get_virt = 0x57c9271e;
-__crc_sspm_reserve_mem_get_size = 0x453bbd3e;
-__crc_sspm_sbuf_get = 0x91c2cf19;

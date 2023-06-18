@@ -1,3 +1,0 @@
-__crc_blake2s_update = 0x114403b1;
-__crc_blake2s_final = 0x0a47744b;
-__crc_blake2s_compress_generic = 0x606421fb;

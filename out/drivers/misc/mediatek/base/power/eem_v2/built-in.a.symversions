@@ -1,7 +1,0 @@
-__crc_mt_ptp_lock = 0x641784c4;
-__crc_mt_ptp_unlock = 0xb6a51dde;
-__crc_mt_record_lock = 0x74a52960;
-__crc_mt_record_unlock = 0xd4a9abd4;
-__crc_mt_eem_opp_num = 0x6bbb660f;
-__crc_mt_eem_opp_freq = 0x1e54ebe7;
-__crc_mt_eem_opp_status = 0x6d05878b;

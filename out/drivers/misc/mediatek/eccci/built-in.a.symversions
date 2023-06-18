@@ -1,7 +1,0 @@
-__crc_mtk_ccci_register_md_state_cb = 0x6b269f65;
-__crc_dpmaif_dump_reg = 0x1c2c8e07;
-__crc_get_smem_phy_start_addr = 0x047f4355;
-__crc_register_udc_functions = 0x286a2ee5;
-__crc_ccci_get_md_debug_mode = 0xd7b2c34a;
-__crc_ccci_md_dump_in_interrupt = 0x63b22e37;
-__crc_ccci_md_debug_dump = 0x53727e9e;

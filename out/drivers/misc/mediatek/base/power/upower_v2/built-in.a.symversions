@@ -1,6 +1,0 @@
-__crc_upower_update_volt_by_eem = 0x4571f14b;
-__crc_upower_update_degree_by_eem = 0xc18412b8;
-__crc_upower_get_tbl = 0x754b65d9;
-__crc_upower_get_turn_point = 0x0334b119;
-__crc_upower_get_core_tbl = 0x62647e23;
-__crc_upower_get_power = 0x9983569f;

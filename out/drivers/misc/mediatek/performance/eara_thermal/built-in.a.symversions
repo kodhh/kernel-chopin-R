@@ -1,4 +1,0 @@
-__crc_eara_thrm_pb_frame_start = 0xc724897b;
-__crc_eara_thrm_pb_enqueue_end = 0x91141b87;
-__crc_eara_thrm_pb_gblock_bypass = 0x453a9a0b;
-__crc_mtk_eara_thermal_pb_handle = 0x470c6d5b;

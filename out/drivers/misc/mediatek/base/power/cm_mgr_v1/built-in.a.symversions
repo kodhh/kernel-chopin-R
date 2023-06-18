@@ -1,7 +1,0 @@
-__crc_cm_mgr_register_cm_mgr_power = 0x8102ca84;
-__crc_cm_mgr_register_cm_mgr_count = 0xbf0e41e6;
-__crc_cm_mgr_register_cm_mgr_opp = 0xc5c7f8b0;
-__crc_cm_mgr_register_cm_mgr_loading = 0x7de689a6;
-__crc_cm_mgr_register_cm_mgr_ratio = 0x49afc363;
-__crc_cm_mgr_register_cm_mgr_bw = 0x9d8ce408;
-__crc_cm_mgr_register_cm_mgr_valid = 0x2e662367;

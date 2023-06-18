@@ -1,2 +1,0 @@
-__crc_inner_dcache_flush_all = 0x2b020b1b;
-__crc_smp_inner_dcache_flush_all = 0xc5bc876e;

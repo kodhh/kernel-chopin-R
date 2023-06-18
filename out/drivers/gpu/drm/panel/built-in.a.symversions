@@ -1,6 +1,0 @@
-__crc_lm36273_reg_write_bytes = 0x04a22509;
-__crc_lm36273_reg_read_bytes = 0x9523af86;
-__crc_lm36273_bl_bias_conf = 0xb12a8077;
-__crc_lm36273_bias_enable = 0xb6710242;
-__crc_lm36273_brightness_set = 0x39f806a4;
-__crc_hbm_brightness_set = 0x56013879;

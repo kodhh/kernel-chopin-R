@@ -1,6 +1,0 @@
-__crc_get_dbg_info_base = 0x59b6f141;
-__crc_get_dbg_info_size = 0x23992ece;
-__crc_set_sram_flag_lastpc_valid = 0xb7b9b4ba;
-__crc_set_sram_flag_etb_user = 0x8baf32c5;
-__crc_set_sram_flag_timestamp = 0xf17de59e;
-__crc_set_sram_flag_dfd_valid = 0xfbce012c;

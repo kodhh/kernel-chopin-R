@@ -1,3 +1,0 @@
-__crc_accdet_read_audio_res = 0x3746acd8;
-__crc_accdet_late_init = 0x80c9cb7b;
-__crc_accdet_eint_callback_wrapper = 0x2044bbfb;
